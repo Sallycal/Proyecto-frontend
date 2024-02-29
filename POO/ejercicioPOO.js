@@ -21,38 +21,54 @@
 //Programa una función para contar el número de veces que se repite una palabra
 //en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2
 
-let texto = "hola mundo adios mundo"; // Definición de la variable fuera de la función
-function contarPalabra (texto, palabra){
+// let texto = "hola mundo adios mundo"; // Definición de la variable fuera de la función
+// function contarPalabra (texto, palabra){
     
-    let palabras = texto.split(/\s+|\b/);
-    let coteoPalabras = 0;
+//     let palabras = texto.split(/\s+|\b/);
+//     let coteoPalabras = 0;
 
-    for (let index = 0; index < palabras.length; index++) {
-        if (palabras[index] === palabraABuscar) {
-            contador++;
+//     for (let index = 0; index < palabras.length; index++) {
+//         if (palabras[index] === palabraABuscar) {
+//             contador++;
 
-        }
-    }
-    return contador; 
+//         }
+//     }
+    //return contador; 
 
-    let palabraABuscar = "mundo";
-    let contador = contarPalabra(texto, palabraABuscar);
-    console.log(`La palabra "${palabraABuscar}" aparece ${contador} veces en el texto.`);
+    //let palabraABuscar = "mundo";
+    //let contador = contarPalabra(texto, palabraABuscar);
+  //  console.log(`La palabra "${palabraABuscar}" aparece ${contador} veces en el texto.`);
 
-}
+//}
 
 
-function esPalindromo(palabra) {
+//function esPalindromo(palabra) {
     // Eliminamos los espacios en blanco y convertimos a minúsculas
-    palabra = palabra.toLowerCase().replace(/ /g, '');
+    //palabra = palabra.toLowerCase().replace(/ /g, '');
 
     // Obtenemos la palabra invertida
-    let palabraInvertida = palabra.split('').reverse().join('');
+   // let palabraInvertida = palabra.split('').reverse().join('');
 
     // Comparamos la palabra original con la palabra invertida
-    return palabra === palabraInvertida;
-}
+ //   return palabra === palabraInvertida;
+//}
 
 // Ejemplo de uso
-console.log(esPalindromo("Salas")); // Devuelve true
+//console.log(esPalindromo("Salas")); // Devuelve true
 
+
+//Vamos a crear una clase llamada RedSocial para modelar una red social básica. Esta
+//clase tendrá los siguientes atributos y métodos:
+
+class RedSocial {
+    constructor (nombre, usuario, publicaciones){
+        this.nombre = nombre;
+        this.usuario = usuario;
+        this.publicaciones = publicaciones;
+    }
+    obtenerInformacion(){
+        return `nombre de la red social: ${this.nombre} usuario registrado: ${this.usuario} publicaones realizada: ${this.publicaciones}`;
+        }
+}
+const redSocial = new RedSocial("instagram,", "Andrea_214,", ["fotos", " videos", " estado de texto", " mensajes de texto"]);
+console.log (redSocial.obtenerInformacion());

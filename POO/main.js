@@ -41,16 +41,16 @@ console.log(animal);
 console.log(gato.obtenerInformacion());
 
 
-class Carro extends Carro {
+class Carro {
     constructor(color, kilometro, marca){
-        super(color = color);
+        this.color = color;
         this.kilometro = kilometro;
         this.marca = marca;
     }
     obtenerInformacion(){
-        return `la marca del carro es ${this.marca} y es de color ${this.color}`
+        return `el color del carro es ${this.color} su kilometraje es ${this.kilometro} y su marca es ${this.marca}`;
     }
 }
-const carro = new Carro("negro", "120", "mercedes");
+const carro = new Carro("negro", "165465", "mercedes");
 console.log(carro.obtenerInformacion());
 
