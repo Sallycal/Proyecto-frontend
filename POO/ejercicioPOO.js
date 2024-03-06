@@ -61,14 +61,21 @@
 //clase tendrá los siguientes atributos y métodos:
 
 class RedSocial {
-    constructor (nombre, usuario, publicaciones){
+    constructor (nombre){
         this.nombre = nombre;
-        this.usuario = usuario;
-        this.publicaciones = publicaciones;
+        this.usuario = [ ];
+        this.publicaciones = [ ];
     }
-    obtenerInformacion(){
-        return `nombre de la red social: ${this.nombre} usuario registrado: ${this.usuario} publicaones realizada: ${this.publicaciones}`;
-        }
+     registrarusuario(nombreUsuario){
+        this.usuario.push(nombreUsuario)
+        return `${nombreUsuario} Usuario registrado`;
 }
-const redSocial = new RedSocial("instagram,", "Andrea_214,", ["fotos", " videos", " estado de texto", " mensajes de texto"]);
-console.log (redSocial.obtenerInformacion());
+
+}
+const redSocial = new RedSocial("instagram");
+
+redSocial.registrarusuario("sally");
+
+main.innerHTML = JSON.stringify(redSocial);
+
+console.log (redSocial.registrarusuario("sally"));
