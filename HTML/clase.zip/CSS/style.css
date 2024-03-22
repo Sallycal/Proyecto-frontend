@@ -1,0 +1,83 @@
+/* color de fondo: hsl(185, 75%, 39%)
+color de texto gris: hsl(227, 10%, 46%)  */
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.bg__img{
+    position: absolute;
+}
+
+.img__top{
+    top: -400px;
+    left: -400px;
+}
+
+.img__botton{
+    bottom: -500px;
+    right: -300px;
+}
+
+.card{
+    position: relative;
+    background-color: #ffff;
+    width: 400px;
+    height: 450px;
+    inset: 0;
+    margin: auto;
+    top: 30vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card__header{
+    position: relative;
+}
+
+.header__pattern{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__profile{
+    position: absolute;
+    margin-top: 96px;
+    left: 160px;
+    border-radius: 50%;
+    border: 5px solid #ffff;
+}
+
+.card__body{
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;;
+}
+
+.card_text{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.card_text--light{
+    color: rgb(106, 111, 129);
+}
+
+.card__footer{
+    position: absolute;
+    top: 300px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+
+.card__number{
+    font-size: 25px;
+}
