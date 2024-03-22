@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: inline-block;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.img {
+    padding: 20xp;
+}
+
+.today {
+    background-color: #91a5b7;
+    padding: 60px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.semana {
+    padding: 20px;
+    width: 100%;
+}
+
+.Buscador {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.input {
+    background-color: #f7f4f4;
+}
+
+.dias-siguentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dia {
+    padding: 20px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+}
+
+.dias-semanas {
+    font-weight: normal;
+    font-size: 10px;
+    padding: 20px;
+}
