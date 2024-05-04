@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./src/index.css">
   </head>
   <body>
-    <div id="app" class="w-80 h-96 mx-auto rounded-lg bg-gradient-to-t from-cyan-900 to-teal-300 p-6 text-center flex flex-col justify-between">
+    <div id="app" class="w-[400px] h-[500px] mx-auto rounded-lg bg-gradient-to-t from-cyan-900 to-teal-300 p-6 text-center flex flex-col justify-between">
 
-      <div class=""  >
-         <input type="search" id="mySearch" name="q" placeholder= "enter city name" border-solid	>
-         <button>🔍</button> 
-      </div>
+      <form class="flex justify-center items-center gap-4" id="formSearch" autocapitalize="off">
+         <input type="text" id="mySearch" name="name-city" placeholder= "Sincelejo" class="p-2 px-3 rounded-2xl w-72  text-gray-500 font-medium"	>
+         <button class="bg-white p-3 rounded-[100%]" type="submit">
+          <img src="./src/img/buscar.png" class="w-[15px] h-[15.6px]" alt="button">
+         </button> 
+      </form>
       
       <div class="img flex justify-center items-center">
         <img src="/src/img/dia-lluvioso.png" width="60" height="60">
@@ -24,10 +26,11 @@
         <h2 class="text-3xl name-city">---</h2>
       </div>
 
-      <div class="flex justify-center">
-        <div id="1" class="text-white">
-          <div class="img flex justify-center items-center">
-            <img src="/src/img/ola.png" width="30" height="30">
+      <div class="flex justify-center text-white ">
+          <div class="flex justify-start items-center gap-2 w-[200px]">
+            <div class="w-[30px]">
+              <img src="/src/img/ola.png" alt="humidity" >
+            </div>
           </div>
 
           <div class="flex flex-col">
@@ -36,12 +39,11 @@
           </div>
         </div>
 
-        <div id="2" class="text-white">
-          <div class="img flex justify-center items-center">
-            <img src="/src/img/viento.png" width="30" height="30">
+        <div class=" text-white w-[200px] flex justify-end items-center gap-2">
+          <div class="w-[30px]">
+            <img src="/src/img/viento.png" alt="wind Speed">
           </div>
 
-        
           <div class="flex flex-col">
           <span class="text-2xl wind">---km/h</span>
           <span>wind Speed</span>
