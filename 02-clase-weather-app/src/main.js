@@ -15,3 +15,10 @@ temp[0].innerHTML = Math.round(data.main.temp) + " ºc";
 city[0].innerHTML = data.name;
 humidity[0].innerHTML = data.main.humidity + "%";
 wind[0].innerHTML = data.wind.speed + " km/h";
+
+formSearch.addEventListener('submit', async function(event){
+    event.preventDefault();
+    const inputSearch = Object.fromEntries(new FormData(event.target));
+    const name = await getDataWeather(inputSearch.nameCity);
+    console.log(name);
+})
